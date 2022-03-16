@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/wavesurfer.js"></script>
+	<script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.regions.min.js"></script>
+	<script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.timeline.js"></script>
+	<!-- <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.cursor.js"></script> -->
+
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/styles/index.css">
+	<script type="text/javascript" src="/scripts/index.js"></script>
+</head>	
+<body>
+
+	<div class="data-column column" id="music-column">
+		Music
+	</div>
+
+	<div class="main-column column">
+		<video controls width="250">
+		    <source src="/video/Leia Jospe - Vine(7).mp4"
+		            type="video/mp4">
+		</video>
+		
+		<div id="waveform"></div>
+		<div id="wave-timeline"></div>
+
+		<input type="range" name="video-clip-start" id="video-start-range-value">
+		<label for="video-clip-start">Video Clip Start</label>
+		<br>
+		<input type="range" name="video-clip-end" id="video-end-range-value">
+		<label for="video-clip-end">Video Clip End</label>
+		<br>
+
+
+		<input
+			type="range"
+			name="audio-clip-start"
+			id="audio-start-range-value"
+			min="0"
+			max="1"
+			step=".01">
+		<label for="audio-clip-start">Audio Clip Start</label>
+		<br>
+		<input
+			type="range"
+			name="audio-clip-end"
+			id="audio-end-range-value"
+			min="0"
+			max="1"
+			step=".01">
+		<label for="audio-clip-end">Audio Clip End</label>
+		<br>
+
+		<input type="checkbox" name="beat-sync">
+		<label for="beat-sync">Beat Sync</label>
+		<br>
+		<input type="checkbox" name="loop">
+		<label for="loop">Loop</label>
+
+		<button id="play">Play</button>
+		<button id="pause">Pause</button>
+	</div>	
+
+
+	<div class="data-column column" id="video-column">
+		Video
+	</div>
+
+
+</body>
+</html>
+

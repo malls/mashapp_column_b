@@ -1,0 +1,19 @@
+{
+  "name": "mashapp-fontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass -o assets/stylesheets/ public/styles/",
+    "start": "node index.js",
+    "dev": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "node-sass": "^7.0.1",
+    "scss": "^0.2.4"
+  }
+}
